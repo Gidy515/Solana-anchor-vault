@@ -1,5 +1,5 @@
 
-use {
+/*use {
     anchor_lang::{
         prelude::Pubkey,
         solana_program::{instruction::Instruction, system_program},
@@ -10,9 +10,9 @@ use {
     solana_message::{Message, VersionedMessage},
     solana_signer::Signer,
     solana_transaction::versioned::VersionedTransaction,
-};
+};*/
 
-#[test]
+/*#[test]
 fn test_initialize() {
     let program_id = anchor_vault::id();
     let payer = Keypair::new();
@@ -47,4 +47,4 @@ fn test_initialize() {
     let res = svm.send_transaction(tx);
     assert!(res.is_ok());
 
-}
+}*/

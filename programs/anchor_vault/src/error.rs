@@ -6,4 +6,8 @@ pub enum ErrorCode {
     Unauthorized,
     #[msg("Counter has reached the maximum value")]
     CounterOverflow,
+    #[msg("Invalid amount")]
+    InvalidAmount,
+    #[msg("Insufficient funds in the vault")]
+    InsufficientFunds,
 }

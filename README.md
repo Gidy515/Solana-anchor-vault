@@ -991,28 +991,34 @@ The current LiteSVM test therefore demonstrates:
 
 The supplied test suite currently covers the complete happy-path lifecycle:
 
-* LiteSVM program initialization;
-* program loading;
-* user funding;
-* Vault State PDA derivation;
-* Vault Account PDA derivation;
-* vault initialization;
-* PDA bump persistence;
-* SOL deposit;
-* exact deposit balance increase;
-* SOL withdrawal;
-* exact withdrawal balance decrease;
-* vault closure;
-* vault state closure;
-* return of remaining vault balance to the user.
+- LiteSVM program initialization;
+- program loading;
+- user funding;
+- Vault State PDA derivation;
+- Vault Account PDA derivation;
+- vault initialization;
+- PDA bump persistence;
+- SOL deposit;
+- exact deposit balance increase;
+- SOL withdrawal;
+- exact withdrawal balance decrease;
+- vault closure;
+- vault state closure;
+- return of remaining vault balance to the user.
 
 The supplied tests do **not** currently demonstrate separate failure-path tests for:
 
-* zero-value deposits;
-* zero-value withdrawals;
-* insufficient funds;
-* invalid vault state PDA;
-* invalid vault account PDA;
-* unauthorized user access.
+- zero-value deposits;
+- zero-value withdrawals;
+- insufficient funds;
+- invalid vault state PDA;
+- invalid vault account PDA;
+- unauthorized user access.
 
 Those validations exist in the instruction implementation, but they are not independently exercised by the supplied integration
+
+## Tests
+
+All tests are passing:
+
+![AMM test results](./assets/vault_turbin3.png)
